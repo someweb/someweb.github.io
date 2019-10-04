@@ -1,15 +1,21 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hello World! git and jekyll it is"
 date:   2019-10-03 19:49:51 -0400
-categories: jekyll update
+categories: git jekyll
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Finally I have been able to setup a blog. The times have changed now no more Blogger or Wordpress, few years ago I would have never imagined I will be using a version control system like Git to host a blog. This is truly amazing how the site is built on Github in background once jekyll configures the code. I had a little bit of hard time trying to setup confugration to use the right theme but alas its working. yay!. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Here's a configuration of Gemfile:
+{% highlight yml %}
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+{% endhighlight %}
+
+I am really looking forward to sharing code snippets and whatever code practices I learn and aleady know.
 
 Jekyll also offers powerful support for code snippets:
-
+Here's JS example : 
 {% highlight javascript %}
 //closures
 function f(y) {
@@ -20,6 +26,7 @@ function f(y) {
 }
 {% endhighlight %}
 
+Here's Python snippet example:
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
@@ -28,8 +35,5 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll.
 [jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
