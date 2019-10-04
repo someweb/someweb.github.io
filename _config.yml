@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: some js, some css, some animation, some web blisss
-email: matharoo89@gmail.com
+title: some web blisss
+email:
 description: >- # this means to ignore newlines until "baseurl:"
-  a journal for capturing my learning journey on various web technologies and other assorted randomness.
+  some js, some css, some animation. a journal for capturing my learning journey on various web technologies and other assorted randomness.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://someweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
@@ -24,7 +24,7 @@ github_username:  matharoo
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-so-simple
 plugins:
   - jekyll-feed
 
