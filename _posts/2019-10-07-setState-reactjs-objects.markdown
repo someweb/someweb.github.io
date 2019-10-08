@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Updating state object using useState in ReactJS functional components "
-date:   2019-10-03 19:49:51 -0400
+date:   2019-10-07 19:49:51 -0400
 categories: reactjs
 tags: [js,reactjs]
 ---
