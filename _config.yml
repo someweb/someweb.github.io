@@ -16,7 +16,7 @@
 remote_theme: mmistakes/so-simple-theme
 # remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "SOME WEB"
+title: "< some web />"
 description: "some JS, some CSS, some animations, some linux and some assorted randomness"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -30,9 +30,9 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
-google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: UA-149601879-1
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: someweb
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 
