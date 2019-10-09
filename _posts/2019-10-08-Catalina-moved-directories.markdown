@@ -7,7 +7,7 @@ tags: [macos,linux]
 ---
 I just installed Mac OSX Catalina and found out that some of my directories have been moved. I had a directory /data/ in the root(/) of my file system. 
 
-I tried creating directory before looking up where its as I thought its gone forever. But if you try to create a directory in the root of you Mac OSX it is no longer possible due to security and potential vulnerabilites in the operating system. 
+I tried creating directory before looking up where its as I thought its gone forever. But if you try to create a directory in the root of your Mac OSX it is no longer possible due to security and potential vulnerabilities in the operating system. The root directory is now read-only and you will get an error saying read only file system if you try to create a directory.
 
 After a quick search I found that the files have been moved under:
 
