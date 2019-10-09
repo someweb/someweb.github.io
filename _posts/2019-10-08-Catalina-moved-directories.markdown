@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Updated macOS to Catalina where are some of my files gone!"
-date:   2019-10-08 23:49:51 -0400
+date:   2019-10-08 17:49:51 -0400
 categories: macos
 tags: [macos,linux]
 ---
