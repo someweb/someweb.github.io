@@ -2,8 +2,8 @@
 layout: post
 title:  "Using docker for local development environment"
 date:   2019-10-14 16:00:51 -0400
-categories: reactjs
-tags: [js,reactjs,docker]
+categories: docker
+tags: [js,docker,linux]
 ---
 Yes you can use Docker for setting up your local development environment. The ability of docker to create containerized environments can be really helpful when you are working on applications that have conflicting versions of libraries.
 
