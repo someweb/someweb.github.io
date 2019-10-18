@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Unit testing in Reactjs with Jest, act()"
-date:   2019-10-17 22:00:51 -0400
+date:   2019-10-17 18:00:51 -0400
 categories: reactjs
 tags: [js,jest,reactjs]
 ---
