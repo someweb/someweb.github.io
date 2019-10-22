@@ -140,14 +140,14 @@ Lets understand how the test works:
 - After our click is fired we need to verify if the msg div appears and have the text 'Hello World' as shown in line 27-28.
 
 <figure class="align-center">
-  <a href="#"><img src="{{ '/assets/images/js/app-test-passing.png' | absolute_url }}" alt="test-passing"></a>
+  <img src="{{ '/assets/images/js/app-test-passing.png' | absolute_url }}" alt="test-passing">
   <figcaption>Tests passing after button click and msg is rendered.</figcaption>
 </figure>
 
 To verify if the tests are not just always passing try changing the expect textContent to something like `'Hsdfdsfs World'` on line 28 and when you run npm test we see a message saying what was rendered and what was expected.
 
 <figure class="align-center">
-  <a href="#"><img src="{{ '/assets/images/js/app-test-failing.png' | absolute_url }}" alt="test-failing"></a>
+  <img src="{{ '/assets/images/js/app-test-failing.png' | absolute_url }}" alt="test-failing">
   <figcaption>Tests failing after button click and msg div with content 'Hsdfdsfs World' is not found</figcaption>
 </figure>
 
