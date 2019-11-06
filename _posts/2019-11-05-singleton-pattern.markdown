@@ -3,7 +3,7 @@ layout: post
 title:  "Design Patterns - Singleton"
 date:   2019-11-05 19:10:13 -0400
 categories: js
-tags: [js,design-patterns]
+tags: [js,singleton,design-pattern]
 ---
 ![functional](/assets/images/js/singleton.jpg){: .align-center}
 
