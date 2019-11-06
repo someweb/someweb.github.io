@@ -3,7 +3,7 @@ layout: post
 title:  "Design patterns : Builder Pattern in JS"
 date:   2019-10-22 16:10:13 -0400
 categories: design-patterns
-tags: [js, builder-pattern]
+tags: [js, builder-pattern,design-pattern]
 ---
 ![builder-pattern](/assets/images/js/builder.jpg){: .align-center}
 
