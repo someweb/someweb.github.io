@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging bash scripts"
 date:   2019-11-12 21:10:13 -0400
-categories: js
+categories: bash
 tags: [bash,linux]
 ---
 ![bash-debug](/assets/images/linux/bash-debug.jpg){: .align-center}
