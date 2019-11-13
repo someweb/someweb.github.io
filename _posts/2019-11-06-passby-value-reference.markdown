@@ -3,7 +3,7 @@ layout: post
 title:  "pass by value vs pass by reference"
 date:   2019-11-12 18:10:13 -0400
 categories: js
-tags: [js,singleton,design-pattern]
+tags: [js]
 ---
 ![pass-by-val-ref](/assets/images/js/pass-by-val-ref.jpg){: .align-center}
 
