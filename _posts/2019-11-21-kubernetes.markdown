@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kubernetes understanding basics and launching a nodejs app"
-date:   2019-11-12 21:10:13 -0400
+date:   2019-11-21 22:15:13 -0400
 categories: kubernetes
 tags: [kubernetes,docker,linux]
 ---
