@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "get set go!"
+date:   2019-11-28 15:29:45 -0400
+categories: js
+tags: [js,oops]
+---
+![docker-jenkins](/assets/images/js/getset.jpg){: .align-center}
+
+By default if we try to assign value or access value of a object property the get and set methods are automatically called respectively. But sometimes if we want to extend the functionality of object we can define our get and set methods. Here's how its done:
+
+### ES6 implementation
+Lets assume we have a simple Name class:
+{% highlight js %}
+class Name{
+  constructor(first,last){
+    this.first = first
+    this.last = last
+  }
+
+  get fullname(){
+    return this.first+' '+this.last
+  }
+
+  set fullname(val){
+    this.first = val.toUpperCase().split(' ')[0]
+    this.last = val.toUpperCase().split(' ')[1]
+  }
+}
+
+let x = new Names()
+x.fullname = "Lebron James"
+console.log(`First name : ${x.first}`)
+console.log(`Last name : ${x.last}`)
+console.log(`Full name : ${x.fullname}`)
+
+{% endhighlight %}
+
+In this example we are have 3 properties defined:
+1. <i>first</i>
+2. <i>last</i>
+3. <i>**fullname (defined with custom get and set)**</i>
+
+We define the get method property fullname with `get` in front of property name and same with set. With the help of our custom set we are defining our first and last property by making it uppercase and splitting the string. This way we can adapt our properties to be more flexible like adding validation checks, calling other functions, setting other properties,etc and handle the values in any way we want and extend the functionality. 
+
+### Object.definedProperty implementation
+We can use **`Object.definedProperty`** to define properties inside the constructor to specify custom `get` and `set` for our property.
+{% highlight js %}
+//same implementation with Object.definedProperty
+class Names{
+  constructor(first,last){
+    this.first = first
+    this.last = last
+    Object.defineProperty(this,'fullname',{
+      get: function(){
+        return this.first+' '+this.last
+      },
+      set: function(val){
+        this.first = val.toUpperCase().split(' ')[0]
+        this.last = val.toUpperCase().split(' ')[1]
+      }
+    })
+  }
+}
+let x = new Names()
+x.fullname = "Lebron James"
+console.log(`First name : ${x.first}`)
+console.log(`Last name : ${x.last}`)
+console.log(`Full name : ${x.fullname}`)
+{% endhighlight %}
