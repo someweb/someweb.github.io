@@ -2,7 +2,7 @@
 layout: post
 title:  "When to use Deployments vs Daemonsets vs Statefulsets"
 date:   2020-09-20 14:00:45 -0800
-categories: js
+categories: devops
 tags: [kubernetes, devops]
 ---
 ![deployments-statefulsets](/assets/images/devops/dep-sta-daem.jpg){: .align-center}
