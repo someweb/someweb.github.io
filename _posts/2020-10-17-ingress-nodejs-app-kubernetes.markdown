@@ -13,7 +13,7 @@ With the complexity surrounding the setup of kubernetes, even starting to setup 
 - Node App
 - Dockerfile
 - Docker Registry
-- Kubernetes manifests
+- Kubernetes Deployments, Services, Ingress, Minikube
 
 #### End Result:
 We will be able to acces the application on url [http://mynodeapp.com](http://mynodeapp.com) on our localhost.
