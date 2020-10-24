@@ -7,7 +7,7 @@ tags: [kubernetes, devops, rbac]
 ---
 ![rbac-relationships](/assets/images/devops/rbac/rbac-relationships.jpg){: .align-center}
 
-When usually communicating with a kubernetes we use `kubectl` command line tool which actually sends in requests to the kube api server to execute any command like creation or deletion of pods, services, namespaces or any kind of kubernetes resources. Kubernetes RBAC gives a number of ways to authenticate and create users which ranges from HTTP basic auth file, to Cerficates as explained in here, to using specific . Another thing to note is not only provides a to authenticate for users but for groups and applications. as well. For example prometheus needs to read K8s resources, so we create service account and bind to the pods, that service account then goes as part of role along with user or groups.
+When communicating with a kubernetes cluster we use `kubectl` command line tool which actually sends in requests to the `kube-api-server` on the master node to execute any command like creation or deletion of pods, services, namespaces or any kind of kubernetes resources. Kubernetes RBAC gives a number of ways to authenticate and create users which ranges from HTTP basic auth file, to Cerficates as explained in here, to using specific . Another thing to note is not only provides a to authenticate for users but for groups and applications. as well. For example prometheus needs to read K8s resources, so we create service account and bind to the pods, that service account then goes as part of role along with user or groups.
 
 Any user using the `kubectl` command must authenticate with API server. Some of the authentication methods include certificate authentication which must be signed with same CA as of Kubernetes server itself for it to actually be able to trust anf accept any of those API call requests. Before we jump into the tutorial quickly verify that rbac is enabled on your K8s by running <br>
 ```
@@ -22,7 +22,7 @@ kubectl api-versions
 Here is a quick tutorial for adding a user based on certificate authentication and allowing it to see the pods running in our nodejs namespace, follow the last tutorial to see how we deployed the node app.
 
 Components involved:
-- Openssl
+- openssl (for cert generation)
 - Minikube / kind / kops
 - Role and RoleBinding K8s resources
 
