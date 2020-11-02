@@ -32,13 +32,13 @@ With the HPA resource defined we can tune up the number of `replicas` up and dow
 The main components of the file definition for hpa are:
 - `scaleTargetRef.name`: which points to our deployment name.
 - `minReplicas` - minimum number of replicas running at all time.
-- `maxReplicas` - maximum number of replicas that HPA can scale up to. It sets the upper limit and pods cannot be autoscaled more than `maxReplicas` number.
+- `maxReplicas` - maximum number of replicas that HPA can scale up to. It sets the upper limit and pods cannot be scaled up more than `maxReplicas` number.
 - `targetCPUUtilizationPercentage` - this is the threshold of CPU resource usage on the pod. When the threshold is hit the HPA adds a new pod. We have set it scale if CPU usage crosses 50%.
 -  `targetCPUUtilizationPercentage`- this is a similar threshold but for memory utilization.
 
 
 #### How HPA works?
-For hpa to work it needs to have access to metrics like CPU and memory usage of our kuberentes pod component. The metrics are supplied through metrics server which pulls the usage out of the pods. HPA can then query metrics server with the latest usage information about CPU and memory and then scale up accoring to the values set in our `hpa.yaml`.
+For hpa to work it needs to have access to metrics like CPU and memory usage of our kubernetes pod component. The metrics are supplied through metrics server which pulls the usage out of the pods. HPA can then query metrics server with the latest usage information about CPU and memory and then scale up according to the values set in our `hpa.yaml`.
 
 #### Tutorial
 Components involved:

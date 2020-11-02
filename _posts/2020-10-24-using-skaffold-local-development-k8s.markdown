@@ -23,12 +23,12 @@ Once you have installed skaffold client on your machine, all we need to do is ru
 
 #### Running the app
 Now we can just run either of the following commands to deploy to the current selected cluster-context: <br>
-- `skaffold dev -n nodejs` if we want to build and deploy the new changes continuosly and watch for any file changes inside our project root dir. And after we exit skaffold it removes the deployments.
+- `skaffold dev -n nodejs` if we want to build and deploy the new changes continuously and watch for any file changes inside our project root dir. And after we exit skaffold it removes the deployments.
 <figure class="align-center">
   <img src="{{ '/assets/images/devops/skaffold/dev.jpg' | absolute_url }}" alt="skaffold-dev">
-  <figcaption>running skaffold in dev mode continously watches and rebuilds and redeploys</figcaption>
+  <figcaption>running skaffold in dev mode continuously watches and rebuilds and redeploys</figcaption>
 </figure>
-- `skaffold run -n nodejs` just create the image once if doesnt exist and deploy it and test.
+- `skaffold run -n nodejs` just create the image once if doesn't exist and deploy it and test.
 <figure class="align-center">
   <img src="{{ '/assets/images/devops/skaffold/run.jpg' | absolute_url }}" alt="skaffold-run">
   <figcaption>it builds and deploy to k8s which can then be deleted with `skaffold delete -n nodejs`</figcaption>
@@ -47,4 +47,4 @@ Forwarding from [::1]:3000 -> 3000
 
 Now app can be tested at : [http://localhost:3000/](http://localhost:3000/)
 
-So skaffold can simplify the life of devs who are entering in the realm of devloping and testing their app on kubernetes without even have to worry about learning and running the kubectl commands.
+So skaffold can simplify the life of developers who are entering in the realm of developing and testing their app on kubernetes without even have to worry about learning and running the kubectl commands.
